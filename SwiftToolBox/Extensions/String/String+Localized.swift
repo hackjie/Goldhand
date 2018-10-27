@@ -6,12 +6,14 @@
 //  Copyright © 2018年 李杰. All rights reserved.
 //
 
+import Foundation
+
 extension String {
     /// According to the key to get localized string
     ///
     /// - Parameter key: key
     /// - Returns: String
-    class func localized(_ key: String) -> String {
+    static func localized(_ key: String) -> String {
         return NSLocalizedString(key, comment: "")
     }
 }

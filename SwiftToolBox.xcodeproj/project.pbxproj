@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6A0039CC219827EB0027773C /* SelfAwake.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A0039CB219827EB0027773C /* SelfAwake.swift */; };
+		6A0039CE2198335A0027773C /* TestSwizzleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A0039CD2198335A0027773C /* TestSwizzleViewController.swift */; };
 		6A1AB8992184393800A3EDC1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A1AB8982184393800A3EDC1 /* AppDelegate.swift */; };
 		6A1AB89B2184393800A3EDC1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A1AB89A2184393800A3EDC1 /* ViewController.swift */; };
 		6A1AB89E2184393800A3EDC1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6A1AB89C2184393800A3EDC1 /* Main.storyboard */; };
@@ -31,6 +33,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6A0039CB219827EB0027773C /* SelfAwake.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelfAwake.swift; sourceTree = "<group>"; };
+		6A0039CD2198335A0027773C /* TestSwizzleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestSwizzleViewController.swift; sourceTree = "<group>"; };
 		6A1AB8952184393800A3EDC1 /* SwiftToolBox.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftToolBox.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A1AB8982184393800A3EDC1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6A1AB89A2184393800A3EDC1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -66,6 +70,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6A0039CA219826D30027773C /* Swizzle */ = {
+			isa = PBXGroup;
+			children = (
+				6A0039CB219827EB0027773C /* SelfAwake.swift */,
+				6A0039CD2198335A0027773C /* TestSwizzleViewController.swift */,
+			);
+			path = Swizzle;
+			sourceTree = "<group>";
+		};
 		6A1AB88C2184393800A3EDC1 = {
 			isa = PBXGroup;
 			children = (
@@ -87,6 +100,7 @@
 		6A1AB8972184393800A3EDC1 /* SwiftToolBox */ = {
 			isa = PBXGroup;
 			children = (
+				6A0039CA219826D30027773C /* Swizzle */,
 				6A620222218493A1000EF76B /* Extensions */,
 				6A1AB8982184393800A3EDC1 /* AppDelegate.swift */,
 				6A1AB89A2184393800A3EDC1 /* ViewController.swift */,
@@ -253,6 +267,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				6A62022921849810000EF76B /* String+Localized.swift in Sources */,
+				6A0039CE2198335A0027773C /* TestSwizzleViewController.swift in Sources */,
+				6A0039CC219827EB0027773C /* SelfAwake.swift in Sources */,
 				6A6202302184A4A3000EF76B /* UILabel+Height.swift in Sources */,
 				6A620224218493E9000EF76B /* Bool+Toggle.swift in Sources */,
 				6A1AB89B2184393800A3EDC1 /* ViewController.swift in Sources */,

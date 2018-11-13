@@ -7,7 +7,7 @@
 //
 
 extension Bool {
-    /// Toggle Bool value
+    /// Toggle Bool value --- 切换 Bool 值
     mutating func toggle() {
         self = !self
     }

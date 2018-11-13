@@ -15,7 +15,7 @@ extension UITapGestureRecognizer {
     ///   - label: UILabel
     ///   - targetRange: NSRange
     /// - Returns: Bool
-    func didTapAttributedTextInLabel(label: UILabel, inRange targetRange: NSRange) -> Bool {
+    public func didTapAttributedTextInLabel(label: UILabel, inRange targetRange: NSRange) -> Bool {
         // Create instances of NSLayoutManager, NSTextContainer and NSTextStorage
         let layoutManager = NSLayoutManager()
         let textContainer = NSTextContainer(size: CGSize.zero)

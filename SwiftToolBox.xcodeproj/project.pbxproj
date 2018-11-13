@@ -19,6 +19,10 @@
 		6A552DFB219B004100B9E262 /* UINavigationController+Navbar.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A552DF9219B004100B9E262 /* UINavigationController+Navbar.m */; };
 		6A552DFD219B054500B9E262 /* String+Check.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A552DFC219B054500B9E262 /* String+Check.swift */; };
 		6A552E00219B115A00B9E262 /* UITapGestureRecognizer+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A552DFF219B115A00B9E262 /* UITapGestureRecognizer+Extension.swift */; };
+		6A552E02219B155E00B9E262 /* UINavigationController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A552E01219B155E00B9E262 /* UINavigationController+Extension.swift */; };
+		6A552E05219B17B900B9E262 /* UIImage+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A552E04219B17B900B9E262 /* UIImage+Extensions.swift */; };
+		6A552E08219B185A00B9E262 /* UIView+Windless.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A552E07219B185A00B9E262 /* UIView+Windless.swift */; };
+		6A552E0A219B196600B9E262 /* UIView+Frame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A552E09219B196600B9E262 /* UIView+Frame.swift */; };
 		6A620224218493E9000EF76B /* Bool+Toggle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A620223218493E9000EF76B /* Bool+Toggle.swift */; };
 		6A6202272184971B000EF76B /* BoolTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A6202262184971B000EF76B /* BoolTests.swift */; };
 		6A62022921849810000EF76B /* String+Localized.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A62022821849810000EF76B /* String+Localized.swift */; };
@@ -55,6 +59,10 @@
 		6A552DFA219B004100B9E262 /* UINavigationController+Navbar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+Navbar.h"; sourceTree = "<group>"; };
 		6A552DFC219B054500B9E262 /* String+Check.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Check.swift"; sourceTree = "<group>"; };
 		6A552DFF219B115A00B9E262 /* UITapGestureRecognizer+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITapGestureRecognizer+Extension.swift"; sourceTree = "<group>"; };
+		6A552E01219B155E00B9E262 /* UINavigationController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UINavigationController+Extension.swift"; sourceTree = "<group>"; };
+		6A552E04219B17B900B9E262 /* UIImage+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Extensions.swift"; sourceTree = "<group>"; };
+		6A552E07219B185A00B9E262 /* UIView+Windless.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Windless.swift"; sourceTree = "<group>"; };
+		6A552E09219B196600B9E262 /* UIView+Frame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Frame.swift"; sourceTree = "<group>"; };
 		6A620223218493E9000EF76B /* Bool+Toggle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bool+Toggle.swift"; sourceTree = "<group>"; };
 		6A6202262184971B000EF76B /* BoolTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoolTests.swift; sourceTree = "<group>"; };
 		6A62022821849810000EF76B /* String+Localized.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Localized.swift"; sourceTree = "<group>"; };
@@ -155,6 +163,7 @@
 				6A552DFA219B004100B9E262 /* UINavigationController+Navbar.h */,
 				6A552DF9219B004100B9E262 /* UINavigationController+Navbar.m */,
 				6A552DF8219B004000B9E262 /* SwiftToolBox-Bridging-Header.h */,
+				6A552E01219B155E00B9E262 /* UINavigationController+Extension.swift */,
 			);
 			path = UINavigationController;
 			sourceTree = "<group>";
@@ -167,9 +176,28 @@
 			path = UITapGestureRecognizer;
 			sourceTree = "<group>";
 		};
+		6A552E03219B174500B9E262 /* UIImage */ = {
+			isa = PBXGroup;
+			children = (
+				6A552E04219B17B900B9E262 /* UIImage+Extensions.swift */,
+			);
+			path = UIImage;
+			sourceTree = "<group>";
+		};
+		6A552E06219B184300B9E262 /* UIView */ = {
+			isa = PBXGroup;
+			children = (
+				6A552E07219B185A00B9E262 /* UIView+Windless.swift */,
+				6A552E09219B196600B9E262 /* UIView+Frame.swift */,
+			);
+			path = UIView;
+			sourceTree = "<group>";
+		};
 		6A620222218493A1000EF76B /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				6A552E06219B184300B9E262 /* UIView */,
+				6A552E03219B174500B9E262 /* UIImage */,
 				6A552DFE219B114500B9E262 /* UITapGestureRecognizer */,
 				6A552DF7219AFF1D00B9E262 /* UINavigationController */,
 				6A62022E2184A48C000EF76B /* UILabel */,
@@ -318,12 +346,16 @@
 				6A62022921849810000EF76B /* String+Localized.swift in Sources */,
 				6A0039CE2198335A0027773C /* TestSwizzleViewController.swift in Sources */,
 				6A0039CC219827EB0027773C /* SelfAwake.swift in Sources */,
+				6A552E08219B185A00B9E262 /* UIView+Windless.swift in Sources */,
+				6A552E05219B17B900B9E262 /* UIImage+Extensions.swift in Sources */,
 				6A552E00219B115A00B9E262 /* UITapGestureRecognizer+Extension.swift in Sources */,
 				6A6202302184A4A3000EF76B /* UILabel+Extensions.swift in Sources */,
+				6A552E02219B155E00B9E262 /* UINavigationController+Extension.swift in Sources */,
 				6A620224218493E9000EF76B /* Bool+Toggle.swift in Sources */,
 				6A552DFB219B004100B9E262 /* UINavigationController+Navbar.m in Sources */,
 				6A1AB89B2184393800A3EDC1 /* ViewController.swift in Sources */,
 				6A62022D21849CAE000EF76B /* String+Format.swift in Sources */,
+				6A552E0A219B196600B9E262 /* UIView+Frame.swift in Sources */,
 				6A552DFD219B054500B9E262 /* String+Check.swift in Sources */,
 				6A1AB8992184393800A3EDC1 /* AppDelegate.swift in Sources */,
 				6A552DF5219AB04900B9E262 /* CustomTextField.swift in Sources */,

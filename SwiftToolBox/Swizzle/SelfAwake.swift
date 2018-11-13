@@ -8,7 +8,6 @@
 
 import UIKit
 
-///http://blog.yaoli.site/post/如何优雅地在Swift4中实现Method-Swizzling
 protocol SelfAwake {
     static func awake()
 }

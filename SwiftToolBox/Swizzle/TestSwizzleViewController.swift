@@ -28,7 +28,7 @@ class TestSwizzleViewController: UIViewController {
 
 extension UIViewController: SelfAwake {
     static func awake() {
-        print(self.description())
+//        print(self.description())
         UIViewController.classInit()
     }
     

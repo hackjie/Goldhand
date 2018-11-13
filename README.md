@@ -12,8 +12,9 @@
 |  | 格式化字符串 | String+Format.swift |  |
 |  | 检查字符串格式 | String+Check.swift |  |
 | UIView | 为视图添加弱网效果 | UIView+Windless.swift |  |
-|  | 为视图添加弱网效果 | UIView+Windless.swift |  |
 |  | Frame 操作 | UIView+Frame.swift |  |
+|  | 便捷操作 | UIView+Helper.swift |  |
+|  | 绘图操作 | UIView+Draw.swift |  |
 | UILabel | 计算高度/附加字符串 | UILabel+Extensions.swift |  |
 | UIImage | 图片操作 | UIImage+Extensions.swift |  |
 | UINavigationController | 隐藏导航栏 | UINavigationController+Navbar.h | OC |

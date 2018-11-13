@@ -10,7 +10,7 @@ import Foundation
 
 // MARK: - Format
 extension String {
-    /// Double String format
+    /// Double String format --- 数字格式化
     ///
     /// - Parameter f: String
     /// - Returns: Optional String
@@ -23,7 +23,7 @@ extension String {
         }
     }
     
-    /// String separated by comma
+    /// String separated by comma --- 金额用逗号隔开处理
     ///
     /// - Parameter maximumFractionDigits: Int
     /// - Returns: Optional String
@@ -36,7 +36,18 @@ extension String {
         return numberFormatter.string(from: number)
     }
     
-    /// Percent String
+    /// String without zero at the end  --- 最大保留小数点后两位小数，小数点后结尾有0去掉
+    ///
+    /// - Returns: String
+    public func decimalStringWithoutZero() -> String? {
+        let number = NSNumber(value: Double(self) ?? 0)
+        let numberFormatter = NumberFormatter()
+        numberFormatter.numberStyle = .none
+        numberFormatter.maximumFractionDigits = 2
+        return numberFormatter.string(from: number)
+    }
+    
+    /// Percent String --- 百分数处理
     ///
     /// - Parameter maximumFractionDigits: Int
     /// - Returns: Optional String
@@ -46,36 +57,5 @@ extension String {
         numberFormatter.numberStyle = .percent
         numberFormatter.maximumFractionDigits = maximumFractionDigits
         return numberFormatter.string(from: number)
-    }
-}
-
-// MARK: - Check format
-extension String {
-    /// Use regular expression to check format
-    ///
-    /// - Parameter pattern: String
-    /// - Returns: Bool
-    func matchRegular(_ pattern: String) -> Bool {
-        return self.range(of: pattern,
-                          options: String.CompareOptions.regularExpression,
-                          range: nil,
-                          locale: nil) != nil
-    }
-    
-    /// Check IP
-    ///
-    /// - Returns: Bool
-    func isIpAddressString() -> Bool {
-        let regex = "^(?:(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\\.){3}(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)$"
-        return matchRegular(regex)
-    }
-    
-    /// Check number
-    ///
-    /// - Returns: Bool
-    func isNumberString() -> Bool {
-        guard !self.isEmpty else { return false }
-        let regularExpression = "^[0-9]*$"
-        return matchRegular(regularExpression)
     }
 }

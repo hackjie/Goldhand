@@ -9,7 +9,7 @@
 import UIKit
 
 extension UILabel {
-    /// Use to call UILabel Height, you can use label1 on screen or create a new label2 to fit,
+    /// 计算 UILabel 高度 --- Use to call UILabel Height, you can use label1 on screen or create a new label2 to fit,
     /// But label2's properties needed to be same to label1
     ///
     /// - Parameter width: CGFloat
@@ -19,7 +19,7 @@ extension UILabel {
         return ceil(size.height) + 1
     }
     
-    /// Use to append new attributed string
+    /// 附加带属性的字符串 --- Use to append new attributed string
     ///
     /// - Parameters:
     ///   - newStr: String
@@ -39,7 +39,6 @@ extension UILabel {
             attributedString.append(attributedText)
         }
         attributedString.append(attributedNewString)
-        
         self.attributedText = attributedString
     }
 }

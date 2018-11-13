@@ -17,6 +17,7 @@
 		6A1AB8AE2184393900A3EDC1 /* SwiftToolBoxTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A1AB8AD2184393900A3EDC1 /* SwiftToolBoxTests.swift */; };
 		6A552DF5219AB04900B9E262 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A552DF4219AB04900B9E262 /* CustomTextField.swift */; };
 		6A552DFB219B004100B9E262 /* UINavigationController+Navbar.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A552DF9219B004100B9E262 /* UINavigationController+Navbar.m */; };
+		6A552DFD219B054500B9E262 /* String+Check.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A552DFC219B054500B9E262 /* String+Check.swift */; };
 		6A620224218493E9000EF76B /* Bool+Toggle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A620223218493E9000EF76B /* Bool+Toggle.swift */; };
 		6A6202272184971B000EF76B /* BoolTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A6202262184971B000EF76B /* BoolTests.swift */; };
 		6A62022921849810000EF76B /* String+Localized.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A62022821849810000EF76B /* String+Localized.swift */; };
@@ -51,6 +52,7 @@
 		6A552DF8219B004000B9E262 /* SwiftToolBox-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SwiftToolBox-Bridging-Header.h"; sourceTree = "<group>"; };
 		6A552DF9219B004100B9E262 /* UINavigationController+Navbar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+Navbar.m"; sourceTree = "<group>"; };
 		6A552DFA219B004100B9E262 /* UINavigationController+Navbar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+Navbar.h"; sourceTree = "<group>"; };
+		6A552DFC219B054500B9E262 /* String+Check.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Check.swift"; sourceTree = "<group>"; };
 		6A620223218493E9000EF76B /* Bool+Toggle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bool+Toggle.swift"; sourceTree = "<group>"; };
 		6A6202262184971B000EF76B /* BoolTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoolTests.swift; sourceTree = "<group>"; };
 		6A62022821849810000EF76B /* String+Localized.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Localized.swift"; sourceTree = "<group>"; };
@@ -187,6 +189,7 @@
 			children = (
 				6A62022821849810000EF76B /* String+Localized.swift */,
 				6A62022C21849CAE000EF76B /* String+Format.swift */,
+				6A552DFC219B054500B9E262 /* String+Check.swift */,
 			);
 			path = String;
 			sourceTree = "<group>";
@@ -309,6 +312,7 @@
 				6A552DFB219B004100B9E262 /* UINavigationController+Navbar.m in Sources */,
 				6A1AB89B2184393800A3EDC1 /* ViewController.swift in Sources */,
 				6A62022D21849CAE000EF76B /* String+Format.swift in Sources */,
+				6A552DFD219B054500B9E262 /* String+Check.swift in Sources */,
 				6A1AB8992184393800A3EDC1 /* AppDelegate.swift in Sources */,
 				6A552DF5219AB04900B9E262 /* CustomTextField.swift in Sources */,
 			);

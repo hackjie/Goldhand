@@ -10,8 +10,9 @@
 | --- | --- | --- | --- |
 | String | 本地化 | String+Localized.swift |  |
 |  | 格式化字符串 | String+Format.swift |  |
+|  | 检查字符串格式 | String+Check.swift |  |
 | UILabel | 计算高度/附加字符串 | UILabel+Extensions.swift |  |
-| UINavigationController | 隐藏导航栏 | UINavigationController+Navbar.h |  |
+| UINavigationController | 隐藏导航栏 | UINavigationController+Navbar.h | OC |
 
 
 

@@ -9,7 +9,7 @@
 import Foundation
 
 extension String {
-    /// According to the key to get localized string
+    /// According to the key to get localized string --- 本地化加载字符串
     ///
     /// - Parameter key: key
     /// - Returns: String

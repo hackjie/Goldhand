@@ -147,20 +147,20 @@
 			path = UITextField;
 			sourceTree = "<group>";
 		};
-		6A552DF7219AFF1D00B9E262 /* UINavigationController+NavBar */ = {
+		6A552DF7219AFF1D00B9E262 /* UINavigationController */ = {
 			isa = PBXGroup;
 			children = (
 				6A552DFA219B004100B9E262 /* UINavigationController+Navbar.h */,
 				6A552DF9219B004100B9E262 /* UINavigationController+Navbar.m */,
 				6A552DF8219B004000B9E262 /* SwiftToolBox-Bridging-Header.h */,
 			);
-			path = "UINavigationController+NavBar";
+			path = UINavigationController;
 			sourceTree = "<group>";
 		};
 		6A620222218493A1000EF76B /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				6A552DF7219AFF1D00B9E262 /* UINavigationController+NavBar */,
+				6A552DF7219AFF1D00B9E262 /* UINavigationController */,
 				6A62022E2184A48C000EF76B /* UILabel */,
 				6A62022B2184985A000EF76B /* String */,
 				6A62022A21849851000EF76B /* Bool */,

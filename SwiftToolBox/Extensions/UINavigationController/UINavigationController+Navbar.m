@@ -18,9 +18,23 @@ typedef void(^_LJViewControllerWillAppearInjectBlock)(UIViewController *viewCont
 @implementation UIViewController (LJNavbarPrivate)
 + (void)load
 {
-    Method originalMethod = class_getInstanceMethod(self, @selector(viewWillAppear:));
-    Method swizzledMethod = class_getInstanceMethod(self, @selector(lj_viewWillAppear:));
-    method_exchangeImplementations(originalMethod, swizzledMethod);
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        Class class = [self class];
+        
+        SEL originalSelector = @selector(viewWillAppear:);
+        SEL swizzledSelector = @selector(lj_viewWillAppear:);
+        
+        Method originalMethod = class_getInstanceMethod(class, originalSelector);
+        Method swizzledMethod = class_getInstanceMethod(class, swizzledSelector);
+        
+        BOOL success = class_addMethod(class, originalSelector, method_getImplementation(swizzledMethod), method_getTypeEncoding(swizzledMethod));
+        if (success) {
+            class_replaceMethod(class, swizzledSelector, method_getImplementation(originalMethod), method_getTypeEncoding(originalMethod));
+        } else {
+            method_exchangeImplementations(originalMethod, swizzledMethod);
+        }
+    });
 }
 
 - (void)lj_viewWillAppear:(BOOL)animated
@@ -60,10 +74,38 @@ typedef void(^_LJViewControllerWillAppearInjectBlock)(UIViewController *viewCont
 @implementation UINavigationController (Navbar)
 + (void)load
 {
-    // Inject "-pushViewController:animated:"
-    Method originalMethod = class_getInstanceMethod(self, @selector(pushViewController:animated:));
-    Method swizzledMethod = class_getInstanceMethod(self, @selector(lj_pushViewController:animated:));
-    method_exchangeImplementations(originalMethod, swizzledMethod);
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        Class class = [self class];
+        
+        // Inject "-pushViewController:animated:"
+        SEL originalPushSelector = @selector(pushViewController:animated:);
+        SEL swizzledPushSelector = @selector(lj_pushViewController:animated:);
+        
+        Method originalPushMethod = class_getInstanceMethod(class, originalPushSelector);
+        Method swizzledPushMethod = class_getInstanceMethod(class, swizzledPushSelector);
+        
+        BOOL pushAddSuccess = class_addMethod(class, originalPushSelector, method_getImplementation(swizzledPushMethod), method_getTypeEncoding(swizzledPushMethod));
+        if (pushAddSuccess) {
+            class_replaceMethod(class, originalPushSelector, method_getImplementation(originalPushMethod), method_getTypeEncoding(originalPushMethod));
+        } else {
+            method_exchangeImplementations(originalPushMethod, swizzledPushMethod);
+        }
+        
+        // Inject "-setViewControllers:animated:"
+        SEL originalSetSelector = @selector(setViewControllers:animated:);
+        SEL swizzledSetSelector = @selector(lj_setViewControllers:animated:);
+        
+        Method originalSetMethod = class_getInstanceMethod(self, originalSetSelector);
+        Method swizzledSetMethod = class_getInstanceMethod(self, swizzledSetSelector);
+        
+        BOOL setAddSuccess = class_addMethod(class, originalSetSelector, method_getImplementation(swizzledSetMethod), method_getTypeEncoding(swizzledSetMethod));
+        if (setAddSuccess) {
+            class_replaceMethod(class, swizzledSetSelector, method_getImplementation(originalSetMethod), method_getTypeEncoding(originalSetMethod));
+        } else {
+            method_exchangeImplementations(originalSetMethod, swizzledSetMethod);
+        }
+    });
 }
 
 - (void)lj_pushViewController:(UIViewController *)viewController animated:(BOOL)animated
@@ -73,6 +115,17 @@ typedef void(^_LJViewControllerWillAppearInjectBlock)(UIViewController *viewCont
     
     // Forward to primary implementation.
     [self lj_pushViewController:viewController animated:animated];
+}
+
+- (void)lj_setViewControllers:(NSArray<UIViewController *> *)viewControllers animated:(BOOL)animated
+{
+    // Handle perferred navigation bar appearance.
+    for (UIViewController *viewController in viewControllers) {
+        [self lj_setupViewControllerBasedNavigationBarAppearanceIfNeeded:viewController];
+    }
+    
+    // Forward to primary implementation.
+    [self lj_setViewControllers:viewControllers animated:animated];
 }
 
 - (void)lj_setupViewControllerBasedNavigationBarAppearanceIfNeeded:(UIViewController *)appearingViewController

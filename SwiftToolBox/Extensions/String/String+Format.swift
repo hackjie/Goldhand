@@ -43,6 +43,7 @@ extension String {
         let number = NSNumber(value: Double(self) ?? 0)
         let numberFormatter = NumberFormatter()
         numberFormatter.numberStyle = .none
+        numberFormatter.minimumIntegerDigits = 1
         numberFormatter.maximumFractionDigits = 2
         return numberFormatter.string(from: number)
     }

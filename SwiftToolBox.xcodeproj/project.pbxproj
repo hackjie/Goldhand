@@ -15,6 +15,7 @@
 		6A1AB8A02184393900A3EDC1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6A1AB89F2184393900A3EDC1 /* Assets.xcassets */; };
 		6A1AB8A32184393900A3EDC1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6A1AB8A12184393900A3EDC1 /* LaunchScreen.storyboard */; };
 		6A1AB8AE2184393900A3EDC1 /* SwiftToolBoxTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A1AB8AD2184393900A3EDC1 /* SwiftToolBoxTests.swift */; };
+		6A300FA221B0DC8500687CA1 /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A300FA121B0DC8500687CA1 /* UIView+Extensions.swift */; };
 		6A552DF5219AB04900B9E262 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A552DF4219AB04900B9E262 /* CustomTextField.swift */; };
 		6A552DFB219B004100B9E262 /* UINavigationController+Navbar.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A552DF9219B004100B9E262 /* UINavigationController+Navbar.m */; };
 		6A552DFD219B054500B9E262 /* String+Check.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A552DFC219B054500B9E262 /* String+Check.swift */; };
@@ -57,6 +58,7 @@
 		6A1AB8A92184393900A3EDC1 /* SwiftToolBoxTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftToolBoxTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A1AB8AD2184393900A3EDC1 /* SwiftToolBoxTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftToolBoxTests.swift; sourceTree = "<group>"; };
 		6A1AB8AF2184393900A3EDC1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6A300FA121B0DC8500687CA1 /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
 		6A552DF4219AB04900B9E262 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		6A552DF8219B004000B9E262 /* SwiftToolBox-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SwiftToolBox-Bridging-Header.h"; sourceTree = "<group>"; };
 		6A552DF9219B004100B9E262 /* UINavigationController+Navbar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+Navbar.m"; sourceTree = "<group>"; };
@@ -199,6 +201,7 @@
 				6A552E09219B196600B9E262 /* UIView+Frame.swift */,
 				6A552E0B219B1CCD00B9E262 /* UIView+Helper.swift */,
 				6A552E0D219B1D6C00B9E262 /* UIView+Draw.swift */,
+				6A300FA121B0DC8500687CA1 /* UIView+Extensions.swift */,
 			);
 			path = UIView;
 			sourceTree = "<group>";
@@ -371,6 +374,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6A300FA221B0DC8500687CA1 /* UIView+Extensions.swift in Sources */,
 				6A62022921849810000EF76B /* String+Localized.swift in Sources */,
 				6A0039CE2198335A0027773C /* TestSwizzleViewController.swift in Sources */,
 				6A0039CC219827EB0027773C /* SelfAwake.swift in Sources */,

@@ -33,6 +33,7 @@
 		6A62022921849810000EF76B /* String+Localized.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A62022821849810000EF76B /* String+Localized.swift */; };
 		6A62022D21849CAE000EF76B /* String+Format.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A62022C21849CAE000EF76B /* String+Format.swift */; };
 		6A6202302184A4A3000EF76B /* UILabel+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A62022F2184A4A3000EF76B /* UILabel+Extensions.swift */; };
+		6ACF2604223935B900B328AA /* String+URL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ACF2603223935B900B328AA /* String+URL.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,6 +79,7 @@
 		6A62022821849810000EF76B /* String+Localized.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Localized.swift"; sourceTree = "<group>"; };
 		6A62022C21849CAE000EF76B /* String+Format.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Format.swift"; sourceTree = "<group>"; };
 		6A62022F2184A4A3000EF76B /* UILabel+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+Extensions.swift"; sourceTree = "<group>"; };
+		6ACF2603223935B900B328AA /* String+URL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+URL.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -260,6 +262,7 @@
 				6A62022821849810000EF76B /* String+Localized.swift */,
 				6A62022C21849CAE000EF76B /* String+Format.swift */,
 				6A552DFC219B054500B9E262 /* String+Check.swift */,
+				6ACF2603223935B900B328AA /* String+URL.swift */,
 			);
 			path = String;
 			sourceTree = "<group>";
@@ -378,6 +381,7 @@
 				6A62022921849810000EF76B /* String+Localized.swift in Sources */,
 				6A0039CE2198335A0027773C /* TestSwizzleViewController.swift in Sources */,
 				6A0039CC219827EB0027773C /* SelfAwake.swift in Sources */,
+				6ACF2604223935B900B328AA /* String+URL.swift in Sources */,
 				6A552E08219B185A00B9E262 /* UIView+Windless.swift in Sources */,
 				6A552E05219B17B900B9E262 /* UIImage+Extensions.swift in Sources */,
 				6A552E00219B115A00B9E262 /* UITapGestureRecognizer+Extension.swift in Sources */,

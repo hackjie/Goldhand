@@ -16,6 +16,7 @@
 | String | 本地化 | String+Localized.swift |  |
 |  | 格式化字符串 | String+Format.swift |  |
 |  | 检查字符串格式 | String+Check.swift |  |
+| | URL 处理 | String+URL.swift | |
 | UIView | 为视图添加弱网效果 | UIView+Windless.swift |  |
 |  | Frame 操作 | UIView+Frame.swift |  |
 |  | 便捷操作 | UIView+Helper.swift |  |
@@ -27,9 +28,3 @@
 | UINavigationController | 隐藏导航栏 | UINavigationController+Navbar.h | OC |
 |  | 导航控制器操作 | UINavigationController+Extension.swift |  |
 | UITapGestureRecognizer | 点击 UILabel 中属性字符串 | UITapGestureRecognizer+Extension.swift |  |
-
-
-## 参与人
-
-[hackjie](https://github.com/hackjie) [Bruce Li](https://github.com/SilongLi) [FMYang](https://github.com/FMYang) [tao.ding](https://github.com/pamierdt)
-

@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		6A0039CC219827EB0027773C /* SelfAwake.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A0039CB219827EB0027773C /* SelfAwake.swift */; };
 		6A0039CE2198335A0027773C /* TestSwizzleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A0039CD2198335A0027773C /* TestSwizzleViewController.swift */; };
+		6A1744C822424A2B003369E0 /* Date+Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A1744C722424A2B003369E0 /* Date+Helper.swift */; };
 		6A1AB8992184393800A3EDC1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A1AB8982184393800A3EDC1 /* AppDelegate.swift */; };
 		6A1AB89B2184393800A3EDC1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A1AB89A2184393800A3EDC1 /* ViewController.swift */; };
 		6A1AB89E2184393800A3EDC1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6A1AB89C2184393800A3EDC1 /* Main.storyboard */; };
@@ -49,6 +50,7 @@
 /* Begin PBXFileReference section */
 		6A0039CB219827EB0027773C /* SelfAwake.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelfAwake.swift; sourceTree = "<group>"; };
 		6A0039CD2198335A0027773C /* TestSwizzleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestSwizzleViewController.swift; sourceTree = "<group>"; };
+		6A1744C722424A2B003369E0 /* Date+Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Helper.swift"; sourceTree = "<group>"; };
 		6A1AB8952184393800A3EDC1 /* SwiftToolBox.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftToolBox.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A1AB8982184393800A3EDC1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6A1AB89A2184393800A3EDC1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -107,6 +109,14 @@
 				6A0039CD2198335A0027773C /* TestSwizzleViewController.swift */,
 			);
 			path = Swizzle;
+			sourceTree = "<group>";
+		};
+		6A1744C622424A18003369E0 /* Date */ = {
+			isa = PBXGroup;
+			children = (
+				6A1744C722424A2B003369E0 /* Date+Helper.swift */,
+			);
+			path = Date;
 			sourceTree = "<group>";
 		};
 		6A1AB88C2184393800A3EDC1 = {
@@ -227,6 +237,7 @@
 		6A620222218493A1000EF76B /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				6A1744C622424A18003369E0 /* Date */,
 				6A552E12219BFDEB00B9E262 /* UITableView */,
 				6A552E0F219BF84100B9E262 /* UIColor */,
 				6A552E06219B184300B9E262 /* UIView */,
@@ -381,6 +392,7 @@
 				6A62022921849810000EF76B /* String+Localized.swift in Sources */,
 				6A0039CE2198335A0027773C /* TestSwizzleViewController.swift in Sources */,
 				6A0039CC219827EB0027773C /* SelfAwake.swift in Sources */,
+				6A1744C822424A2B003369E0 /* Date+Helper.swift in Sources */,
 				6ACF2604223935B900B328AA /* String+URL.swift in Sources */,
 				6A552E08219B185A00B9E262 /* UIView+Windless.swift in Sources */,
 				6A552E05219B17B900B9E262 /* UIImage+Extensions.swift in Sources */,
